@@ -55,7 +55,7 @@ jobs:
         with:
           payload: |
             {
-              "text": "Build and test passed! :tada: Code pushed to *main* branch"
+              "text":"rocket: Deployment successful *${{github.actor}}* pushed to *${{github.ref}}*"
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
